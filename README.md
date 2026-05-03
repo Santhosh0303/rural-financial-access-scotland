@@ -1,16 +1,26 @@
- Rural Financial Access in Scotland
+Rural Financial Access in Scotland
+
+
 Project overview
+
+
+
 This project studies physical financial access in rural Scotland.
+
 It uses geospatial analysis, machine learning, and scenario simulation to find rural Data Zones that may have weak access to banks, ATMs, and post offices.
+
 The final output is a Power BI dashboard framework with four pages:
 1. Financial service distribution overview.
 2. Accessibility analysis.
 3. Underserved rural zone identification.
 4. Scenario simulation and policy insights.
+
 The project was built for an MSc Data Analytics dissertation at De Montfort University.
+
 
 Main aim
 The aim is to build a reproducible geospatial and machine learning framework that identifies underserved rural zones in Scotland and tests possible intervention options for improving access to physical and financial services.
+
 
 Research focus
 The project focuses on three main questions:
@@ -19,7 +29,9 @@ The project focuses on three main questions:
 3. Can machine learning help identify underserved rural Data Zones?
 4. Which rural zones should be prioritised for simulated intervention?
 
- Financial access points used
+
+
+Financial access points used:
 The project uses three physical service types:
 1.	Banks
 2.	ATMs
