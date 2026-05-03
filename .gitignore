@@ -1,0 +1,50 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local cache
+cache/
+
+# Raw and generated data are excluded from GitHub
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep data folder notes
+!data/README.md
+
+# Temporary files
+~$*
+*.tmp
+*.log
+
+# Large GIS and archive files
+*.gpkg
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+*.sbn
+*.sbx
+*.zip
+
+# Private dissertation drafts and ethics documents
+docs/*P2906554*
+docs/*Project-Report*
+docs/*ML Logs*
+docs/*Dashboard Planning*
+docs/BI Mock Dashboards/

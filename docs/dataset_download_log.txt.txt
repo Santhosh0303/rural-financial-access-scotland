@@ -1,0 +1,205 @@
+Dataset Download Log — MSc Dissertation
+
+Project: Rural Financial Service Accessibility (Scotland)
+Project Folder: C:\Dissertation-DMU\rural-financial-access-scotland
+
+------------------------------------------------------------
+
+1) Data Zone Boundaries 2022
+Source: https://www.spatialdata.gov.scot
+Download date: 28/02/2026
+File name saved: dz_2022_boundaries.shp (plus .dbf/.shx/.prj/.cpg/.sbn/.sbx)
+Notes: Shapefile zip (~25MB) extracted. Contains 7,392 Data Zones. Stored at:
+C:\Dissertation-DMU\rural-financial-access-scotland\data\raw\dz_boundaries_2022\
+
+Dataset: Data Zone Boundaries 2011
+Source: Scottish Government Spatial Data Portal
+Link: https://www.spatialdata.gov.scot
+Format: Shapefile
+Geography: Data Zone (2011)
+Number of zones: 6,976
+Purpose: Used to compute centroids and align 2011-based datasets (population, SIMD) with 2022 Data Zone geography.
+------------------------------------------------------------
+
+2) Scottish Index of Multiple Deprivation (SIMD) (2016&2020)
+
+SIMD 2020 (Revised v2)
+
+Source:
+https://www.gov.scot/collections/scottish-index-of-multiple-deprivation-2020/
+
+Dataset Used:
+Scottish Index of Multiple Deprivation 2020v2 – Ranks
+
+Download date: 28/02/2026
+File name saved: simd_2020.xlsx
+
+Notes:
+Data Zone level ranks dataset downloaded. SIMD 2020v2 revision used (corrected income domain ranks). Contains overall SIMD rank and domain ranks for 6,976 Data Zones.
+
+
+------------------------------------------------------------
+
+SIMD 2016
+
+Source (Archived Official Scottish Government Site):
+https://webarchive.nrscotland.gov.uk/20190708060827/https://www2.gov.scot/Topics/Statistics/SIMD
+
+Dataset Used:
+SIMD16 – Ranks and Domain Ranks (Excel file)
+
+Download date: 28/02/2026
+File name saved: simd_2016.xlsx
+
+Notes:
+Archived Scottish Government dataset accessed via National Records of Scotland Web Archive. Data Zone level overall ranks and domain ranks used for pre-COVID baseline comparison.
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+3) Population Estimates (Small Area Population Estimates / SAPE)
+
+A) Rebased small area population estimates for 2011 to 2021 (2011 data zones)
+
+Source:
+https://www.nrscotland.gov.uk/publications/rebased-small-area-population-estimates-for-2011-to-2021-2011-data-zones/
+
+Download date: 28/02/2026
+
+Files saved:
+population_2011.xlsx
+population_2012.xlsx
+population_2013.xlsx
+population_2014.xlsx
+population_2015.xlsx
+population_2016.xlsx
+population_2017.xlsx
+population_2018.xlsx
+population_2019.xlsx
+population_2020.xlsx
+population_2021.xlsx
+
+Notes:
+Rebased SAPE annual datasets at Data Zone level (2011 Data Zones). Used to construct longitudinal demographic panel (2011–2021).
+
+------------------------------------------------------------
+
+B) Small area population estimates: mid-2022 (2011 data zones)
+
+Source:
+https://www.nrscotland.gov.uk/publications/small-area-population-estimates-mid-2022/
+
+Download date: 28/02/2026
+File saved:
+population_2022.xlsx
+
+Notes:
+Data Zone level mid-year population estimate. Extends panel into post-COVID period.
+
+------------------------------------------------------------
+
+C) Small area population estimates: mid-2023 (2011 data zones)
+
+Source:
+https://www.nrscotland.gov.uk/publications/small-area-population-estimates-mid-2023-and-mid-2024-2011-data-zones/
+
+Download date: 28/02/2026
+File saved:
+population_2023.xlsx
+
+Notes:
+Downloaded “Mid-2023 (11 DZ)” Excel file only. Used for final post-COVID comparison year.
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+4) Scottish Government Urban Rural Classification (SGUR) 2022
+
+Source:
+https://www.gov.scot/publications/scottish-government-urban-rural-classification-2022/
+
+Dataset Used:
+Data Zone 2022 Lookup (CSV)
+
+Download date: 28/02/2026
+File saved: rural_classification_2022.csv
+
+Notes:
+Data Zone level lookup containing DZ22_Code and 2-fold, 3-fold, 6-fold and 8-fold classifications. Used to identify accessible and remote rural areas.
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+5) Post Office Branch Locations
+
+Source:
+OpenStreetMap (https://www.openstreetmap.org)
+
+Access method:
+Extracted programmatically using OSMnx (Python), filtering amenity = 'post_office' within Scotland boundary.
+
+Extraction date:
+(To be filled during coding phase)
+
+Notes:
+Used as proxy for physical financial access points. Coordinates and branch names obtained directly from OSM geospatial data.
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+6) Bank Branch Locations
+
+Source:
+OpenStreetMap (https://www.openstreetmap.org)
+
+Access method:
+Extracted programmatically using OSMnx (Python), filtering amenity = 'bank' within Scotland boundary.
+
+Notes:
+Used as proxy for physical bank branch locations. Closure trend statistics referenced from FCA and public reports for contextual temporal analysis.
+
+------------------------------------------------------------
+
+7) OpenStreetMap Network (OSMnx)
+Source: OpenStreetMap
+Access method: OSMnx (Python)
+Network extraction date:
+Notes:
+---------------------------------------------------------------
+
+8) Bank Branch Closures (UK – Scotland Subset)
+
+Source:
+https://www.geolytix.com
+
+Dataset Used:
+Geolytix UK Bank & Building Society Locations (Open Dataset)
+
+Download date: 31/03/2026
+
+File saved:
+geolytix_banks_raw_20260331.zip (extracted)
+
+Notes:
+Open dataset containing UK bank and building society branch locations with attributes including branch name, address, postcode, geographic coordinates (latitude/longitude), operational status (Open, Closed, Closing), and closure information (close_month, close_year).
+
+Dataset extracted and stored at:
+C:\Dissertation-DMU\rural-financial-access-scotland\data\raw\bank_closures\geolytix\
+
+Initial filtering performed in Excel to create Scotland-specific closure subset:
+- Region filtered to: Scotland
+- Status filtered to: Closed and Closing
+- Closure years observed: 2015–2025
+
+Filtered dataset saved as:
+bank_closures_scotland_closed_closing_raw.xlsx
+
+Purpose:
+Used to construct bank closure event dataset for temporal and spatial analysis, including pre-COVID, COVID, and post-COVID comparisons, and to evaluate changes in physical financial service accessibility across rural Scotland.
+
+Validation:
+To be cross-checked using Which? Bank Branch Closure Tracker and contextualised with FCA Access to Cash publications.
+
+------------------------------------------------------------
