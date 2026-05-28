@@ -207,7 +207,6 @@ This project has some limits.
 The accessibility method uses the nearest spatial distance. It does not fully model public transport, car travel, road speed, opening hours, service capacity, or user behaviour.
 The ML model depends on the quality of the chosen labels and input features.
 The scenario simulation is an analytical test. It does not include land availability, cost contracts, bank commercial decisions, or full policy feasibility.
-These limits are important. They help keep the project honest.
 
 
 
