@@ -3,13 +3,7 @@
 ## Purpose of this file
 This file records the key development decisions I have locked for my dissertation project. It is being maintained so that the coding phase follows one clear structure and so that important technical decisions are documented consistently.
 
-## Source documents for the development phase
-For the coding and implementation stage, I am using the following two documents as the main source of truth:
 
-1. Updated Development Phase Plan  
-2. Updated Implementation Plan  
-
-These two documents will guide the development order, validation checks, and version structure of the project.
 
 ## Locked project decisions
 I have locked the following decisions for the development phase:
