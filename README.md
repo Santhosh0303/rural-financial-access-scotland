@@ -36,7 +36,11 @@ The project uses three physical service types:
 1.	Banks
 2.	ATMs
 3.	Post offices
-These are combined because rural financial inclusion is not only about bank branches. In some rural areas, post offices and ATMs may also support basic access to cash and financial services.
+
+
+These are combined because rural financial inclusion is not only about bank branches. 
+
+In some rural areas, post offices and ATMs may also support basic access to cash and financial services.
 
 
 Spatial unit:
@@ -210,13 +214,13 @@ These limits are important. They help keep the project honest.
 
 
 Current project status:
-The coding pipeline has been completed, and final QA has passed.
+COMPLETE
 Current evidence status:
 Core pipeline: complete
 Dashboard exports: complete
 Power BI dashboards: complete
 Final QA: passed
-Documentation: in progress
+Documentation: complete
 
 
 Related documentation:
@@ -224,9 +228,7 @@ The following project documents support this README:
 PIPELINE_RUNBOOK.md
 DATA_VALIDATION_REPORT.md
 MODEL_EVALUATION_REPORT.md
-SCENARIO_SIMULATION_METHOD.md
-OUTPUT_MANIFEST.md
-LIMITATIONS.md
+
 
 
 These documents explain the pipeline order, validation results, model evidence, scenario method, final outputs, and project limitations in more detail.
